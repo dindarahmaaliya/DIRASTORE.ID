@@ -1,0 +1,83 @@
+body {
+  background: linear-gradient(to right, #FFB6C1, #8A2BE2);
+  font-family: Arial, sans-serif;
+  color: #ffffff; 
+  min-height: 100vh; 
+}
+
+.header {
+  background: linear-gradient(135deg, #7d51d4, #8e2de2);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.navbar-content h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: rgb(20, 20, 20);
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #1c1c1c;
+  width: 200px;
+  display: none;
+  flex-direction: column;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  border-bottom: 1px solid #333;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 1rem;
+}
+
+.nav-menu li a:hover {
+  background: #333;
+}
+
+.nav-menu.active {
+  display: flex;
+}
+
+.product-box {
+  background-color: #f9fafb; /* Warna latar putih keabu-abuan */
+  border: 1px solid #e5e7eb; /* Warna border abu-abu muda */
+  padding: 16px; /* Spasi di dalam box */
+  border-radius: 8px; /* Sudut melengkung */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-box:hover {
+  transform: translateY(-5px); /* Efek hover untuk elevasi */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow lebih intens */
+}
+
+
