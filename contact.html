@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - DIRASTORE.ID</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+
+    <!-- PROMOTION COMPONENT -->
+    <div class="bg-[#333] px-4 py-3 text-[#FFFFFF]">
+        <p class="text-center text-sm font-medium">
+            PROMO HINGGA 50%
+            <a href="index.html" class="inline-block underline">Lihat promo sekarang!</a>
+        </p>
+    </div>
+    <!-- PROMOTION COMPONENT END -->
+
+    <!-- NAVBAR CONTENT -->
+    <header>
+        <div class="navbar">
+            <div class="navbar-content">
+                    <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">DIRASTORE.ID</h1>
+                    <p class="mt-1.5 text-sm text-gray-500">Belanja koleksi Fashion langka dan murah 🛒</p>
+            </div>
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+    <!-- NAVBAR CONTENT END -->
+
+    <!-- CONTENT -->
+    <main class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-gray-900 text-center mb-6">Contact</h2>
+        <p class="text-gray-700 text-center mb-8">
+            Kami memahami pentingnya kepuasan pelanggan. Oleh karena itu, tim layanan kami siap membantu Anda kapan saja melalui:
+        </p>
+    
+        <!-- CONTACT -->
+        <div class="mt-8 text-center">
+            <p class="text-sm font-medium text-gray-700">Anda dapat mengirimkan pesan melalui:</p>
+            <div class="social-icons mt-4">
+                <a href="https://wa.me/6285881369776?text=DIRASTORE.ID%20Hallo,%20saya%20ingin%20bertanya%20tentang%20produk." target="_blank" class="social-icon text-gray-800 mx-2">
+                    <i class="fab fa-whatsapp text-xl"></i> WhatsApp
+                </a>
+                <br>
+                <a href="mailto:support@aliyadindarahma16@gmail.com" target="_blank" class="social-icon text-gray-800 mx-2">
+                    <i class="fab fa-google text-xl"></i> Email
+                </a>
+            </div>
+        </div>
+        <div class="mt-8 text-center">
+            <p class="text-sm font-medium text-gray-700">Atau Anda dapat mengunjungi akun melalui sosial media kami:</p>
+            <div class="social-icons  text-gray-800 mt-4">
+                <a href="https://www.instagram.com/yourusername" target="_blank" class="social-icon mx-2">
+                    <i class="fab fa-instagram text-xl"></i> Instagram
+                </a>
+                <br>
+                <a href="https://facebook.com/yourusername" target="_blank" class="social-icon mx-2">
+                    <i class="fab fa-facebook text-xl"></i> Facebook
+                </a>
+                <br>
+                <a href="https://twitter.com/yourusername" target="_blank" class="social-icon mx-2">
+                    <i class="fab fa-twitter text-xl"></i> Twitter
+                </a>
+            </div>
+        </div>
+    </main>
+    <!-- CONTACT END -->
+    
+    <br>
+    <br>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 DIRASTORE.ID. All rights reserved.</p>
+          </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+    
+
+</body>
+</html>

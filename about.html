@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About DIRASTORE.ID</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- PROMOTION COMPONENT -->
+    <div class="bg-[#333] px-4 py-3 text-[#FFFFFF]">
+        <p class="text-center text-sm font-medium">
+            PROMO HINGGA 50%
+            <a href="#" class="inline-block underline">Lihat promo sekarang!</a>
+        </p>
+    </div>
+    <!-- PROMOTION COMPONENT END -->
+
+    <!-- NAVBAR CONTENT -->
+    <header>
+      <div class="navbar">
+        <div class="brand">
+                <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">DIRASTORE.ID</h1>
+                <p class="mt-1.5 text-sm text-gray-500">Belanja koleksi Fashion langka dan murah 🛒</p>
+        </div>
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        </div>
+  </header>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  </script>
+    <!-- NAVBAR CONTENT END -->
+
+    <!-- CONTENT -->
+    <article class="overflow-hidden rounded-lg border border-gray-100 bg-linear-gradient(135deg, #e8e7ea, #d5cbde) shadow-sm">
+        <img
+        alt="Fashionista"
+        src="https://media.istockphoto.com/id/1373259600/id/foto/wanita-berbelanja-online-dengan-smartphone-dan-beberapa-tas-belanja-ruang-salin-ilustrasi-3d.jpg?s=1024x1024&w=is&k=20&c=jjae4YLkP0CHu__i5Gn45TVNdf9bz3H4MoGmQJ3HokI="
+        class="w-full h-auto object-cover"
+        />
+   
+
+      <div class="p-4 sm:p-6">
+        <a href="#!" onclick="toggleReadMore(event)">
+          <h3 class="text-lg font-medium text-gray-[#333]">
+            Tentang Kami
+          </h3>
+        </a>
+
+        <p id="short-text" class="mt-2 text-sm/relaxed text-gray-[#333]">
+          DIRASTORE.ID adalah platform belanja baju online yang menawarkan koleksi pakaian modern, trendi, dan berkualitas.
+          Kami hadir untuk memenuhi kebutuhan fashion masyarakat Indonesia dengan menyediakan berbagai pilihan pakaian yang sesuai dengan tren terkini...
+        </p>
+
+        <p id="full-text" class="mt-2 text-sm/relaxed text-gray-[#333] hidden">
+          DIRASTORE.ID adalah platform belanja baju online yang menawarkan koleksi pakaian modern, trendi, dan berkualitas.
+          Kami hadir untuk memenuhi kebutuhan fashion masyarakat Indonesia dengan menyediakan berbagai pilihan pakaian yang sesuai dengan tren terkini.
+          Kami memahami bahwa fashion bukan hanya tentang pakaian, tetapi juga tentang cara mengekspresikan diri, membangun kepercayaan diri, dan menciptakan kesan pertama yang tak terlupakan.
+          Oleh karena itu, DIRASTORE.ID hadir sebagai mitra gaya hidup Anda, membantu Anda menemukan busana yang paling cocok untuk berbagai kesempatan, mulai dari acara formal hingga gaya kasual sehari-hari.
+          Sebagai perusahaan yang berorientasi pada pelanggan, kami berkomitmen untuk memberikan pengalaman belanja yang mudah dan menyenangkan. 
+          Dengan teknologi terkini, navigasi yang intuitif, dan berbagai metode pembayaran serta pengiriman yang fleksibel, kami memastikan setiap pelanggan dapat menikmati kemudahan berbelanja dari rumah atau mana saja.
+          Selain itu, kami selalu membuka telinga terhadap masukan pelanggan untuk terus meningkatkan layanan kami.
+
+
+        </p>
+
+        <button
+          id="read-more-btn"
+          class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
+          onclick="toggleReadMore(event)"
+        >
+          Find out more
+        </button>
+      </div>
+    </article>
+
+    <script>
+      function toggleReadMore(event) {
+        event.preventDefault();
+        const shortText = document.getElementById('short-text');
+        const fullText = document.getElementById('full-text');
+        const button = document.getElementById('read-more-btn');
+
+        if (fullText.classList.contains('hidden')) {
+          fullText.classList.remove('hidden');
+          shortText.classList.add('hidden');
+          button.innerText = 'Read less';
+        } else {
+          fullText.classList.add('hidden');
+          shortText.classList.remove('hidden');
+          button.innerText = 'Find out more';
+        }
+      }
+    </script>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-bottom">
+          <p>&copy; 2024 DIRASTORE.ID. All rights reserved.</p>
+        </div>
+  </footer>
+    <!-- FOOTER END -->
+</body>
+</html>
+
+
